@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vh;
+  width: 40vw;
+  margin-top: 3vh;
+}
+form input[type="text"],
+form input[type="email"] {
+  border: none;
+  background-color: #292929;
+  padding: 1rem;
+  width: 50%;
+  border-radius: 10px;
+  color: aliceblue;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+  outline: none;
+  border: 1px solid #00ff00;
+}
+.login-form {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  form {
+    width: 100vw;
+    display: "flex";
+    flex-direction: "column";
+    justify-content: "center";
+    align-items: "center";
+    gap: 1vh;
+  }
+  .login-form {
+    width: 100vw;
+    height: 100vh;
+    display: "flex";
+    flex-direction: "column";
+    justify-content: "center";
+    align-items: "center";
+    gap: 1vh;
+  }
+  .login-poster {
+    display: none;
+  }
+}
