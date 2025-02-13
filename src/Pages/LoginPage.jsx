@@ -62,7 +62,7 @@ const LoginPage = () => {
     clearForm();
     localStorage.setItem("user", JSON.stringify(formData));
     toast.success("User Registered Successfully");
-    navigate("/Genre");
+    navigate("/genre");
   };
 
   
